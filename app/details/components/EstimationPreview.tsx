@@ -147,7 +147,8 @@ export function EstimationPreview({ selections, pricing, onDownload, onReset }: 
             </button>
           </div>
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
+  </div>
   );
 }
