@@ -201,7 +201,7 @@ function DetailsContent() {
   if (!mounted) return null;
 
   return (
-    <main className={`${montserrat.className} h-screen w-full flex flex-col bg-[#0a0a0a] text-white selection:bg-emerald-500/30 overflow-hidden`}>
+    <main className={`${montserrat.className} h-[100dvh] w-full flex flex-col bg-[#0a0a0a] text-white selection:bg-emerald-500/30 overflow-hidden`}>
 
       <AnimatePresence>
         {isEstimating && (
@@ -225,7 +225,7 @@ function DetailsContent() {
         </div>
       </nav>
 
-      <div className="flex flex-1 overflow-hidden relative">
+      <div className="flex flex-1 overflow-hidden relative min-h-0">
 
         <AnimatePresence mode="wait">
           {showPreview ? (
@@ -314,7 +314,7 @@ function DetailsContent() {
                 </div>
 
                 {/* Fixed Footer Controls (Optimized) */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/98 to-transparent pt-20 z-20">
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/98 to-transparent pt-20 z-20">
                   <div className="max-w-2xl">
                     <div className="flex justify-between items-center gap-4 md:gap-6">
                       <button

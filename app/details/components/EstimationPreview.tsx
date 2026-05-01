@@ -13,12 +13,13 @@ interface EstimationPreviewProps {
 
 export function EstimationPreview({ selections, pricing, onDownload, onReset }: EstimationPreviewProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="max-w-4xl mx-auto py-12 px-6"
-    >
-      <div className="flex flex-col items-center text-center mb-16">
+    <div className="w-full h-full overflow-y-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="max-w-4xl mx-auto py-12 px-6"
+      >
+        <div className="flex flex-col items-center text-center mb-16">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -146,7 +147,7 @@ export function EstimationPreview({ selections, pricing, onDownload, onReset }: 
             </button>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
