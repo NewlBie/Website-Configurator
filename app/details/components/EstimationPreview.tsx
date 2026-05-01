@@ -42,8 +42,8 @@ export function EstimationPreview({ selections, pricing, onDownload, onReset }: 
           whileHover={{ scale: 1.02 }}
           className="relative group"
         >
-          <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 rounded-[2rem] blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
-          <div className="relative bg-[#111] border border-white/10 rounded-2xl overflow-hidden shadow-2xl aspect-[3/4] flex flex-col">
+          <div className="absolute -inset-4 bg-linear-to-r from-emerald-500/20 to-blue-500/20 rounded-4xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
+          <div className="relative bg-[#111] border border-white/10 rounded-2xl overflow-hidden shadow-2xl aspect-3/4 flex flex-col">
             {/* Simulated Header */}
             <div className="h-16 bg-white/5 border-b border-white/5 px-6 flex items-center justify-between">
               <div className="flex items-center gap-2">
@@ -95,15 +95,15 @@ export function EstimationPreview({ selections, pricing, onDownload, onReset }: 
 
         {/* ACTIONS & DETAILS */}
         <div className="flex flex-col gap-8">
-          <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-8 space-y-6">
+          <div className="bg-white/2 border border-white/5 rounded-2xl p-8 space-y-6">
             <div>
               <h3 className="text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">Final Configuration</h3>
               <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 rounded-xl bg-white/[0.03] border border-white/5">
+                <div className="p-4 rounded-xl bg-white/3 border border-white/5">
                   <p className="text-[10px] text-gray-500 uppercase font-bold mb-1">Total Value</p>
                   <p className="text-xl font-bold text-white">INR {pricing.finalPrice.toLocaleString()}</p>
                 </div>
-                <div className="p-4 rounded-xl bg-white/[0.03] border border-white/5">
+                <div className="p-4 rounded-xl bg-white/3 border border-white/5">
                   <p className="text-[10px] text-gray-500 uppercase font-bold mb-1">Timeline</p>
                   <p className="text-xl font-bold text-white">~4-8 Weeks</p>
                 </div>

@@ -201,7 +201,7 @@ function DetailsContent() {
   if (!mounted) return null;
 
   return (
-    <main className={`${montserrat.className} h-[100dvh] w-full flex flex-col bg-[#0a0a0a] text-white selection:bg-emerald-500/30 overflow-hidden`}>
+    <main className={`${montserrat.className} h-dvh w-full flex flex-col bg-[#0a0a0a] text-white selection:bg-emerald-500/30 overflow-hidden`}>
 
       <AnimatePresence>
         {isEstimating && (
@@ -212,7 +212,7 @@ function DetailsContent() {
       {/* NAVBAR */}
       <nav className="flex justify-between items-center px-10 py-5 border-b border-white/5 bg-[#0a0a0a]/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded bg-gradient-to-br from-emerald-400 to-blue-500 flex items-center justify-center">
+          <div className="w-8 h-8 rounded bg-linear-to-br from-emerald-400 to-blue-500 flex items-center justify-center">
             <span className="font-bold text-black text-sm">NB</span>
           </div>
           <span className="font-bold text-lg tracking-wider">NEWL<span className="font-light">BIE</span></span>
@@ -276,7 +276,7 @@ function DetailsContent() {
                         className="h-1 flex-1 rounded-full bg-white/5 relative overflow-hidden"
                       >
                         <motion.div
-                          className={`absolute inset-0 bg-gradient-to-r ${step <= currentStep ? "from-emerald-400 to-emerald-500" : "from-transparent to-transparent"}`}
+                          className={`absolute inset-0 bg-linear-to-r ${step <= currentStep ? "from-emerald-400 to-emerald-500" : "from-transparent to-transparent"}`}
                           initial={false}
                           animate={{ 
                             x: step <= currentStep ? "0%" : "-100%",
@@ -314,7 +314,7 @@ function DetailsContent() {
                 </div>
 
                 {/* Fixed Footer Controls (Optimized) */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/98 to-transparent pt-20 z-20">
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 bg-linear-to-t from-[#0a0a0a] via-[#0a0a0a]/98 to-transparent pt-20 z-20">
                   <div className="max-w-2xl">
                     <div className="flex justify-between items-center gap-4 md:gap-6">
                       <button
@@ -367,7 +367,7 @@ function DetailsContent() {
 
               {/* RIGHT COLUMN - PROJECT SUMMARY */}
               <div className={`
-                fixed inset-0 z-[100] lg:relative lg:inset-auto lg:z-auto lg:w-[45%]
+                fixed inset-0 z-100 lg:relative lg:inset-auto lg:z-auto lg:w-[45%]
                 ${showMobileSummary ? "flex flex-col" : "hidden lg:flex"}
               `}>
                 {/* Backdrop for mobile */}
@@ -377,7 +377,7 @@ function DetailsContent() {
                 />
                 
                 {/* Mobile: slide-up sheet from bottom | Desktop: full side panel */}
-                <div className="mt-auto lg:mt-0 h-[85vh] lg:h-full w-full relative z-[101] lg:z-auto rounded-t-2xl lg:rounded-none overflow-hidden">
+                <div className="mt-auto lg:mt-0 h-[85vh] lg:h-full w-full relative z-101 lg:z-auto rounded-t-2xl lg:rounded-none overflow-hidden">
                   <ProjectSummary
                     selections={selections}
                     pricing={pricing}
@@ -391,7 +391,7 @@ function DetailsContent() {
                 {/* Close Button Mobile */}
                 <button
                   onClick={() => setShowMobileSummary(false)}
-                  className="lg:hidden fixed top-[calc(15vh+12px)] right-4 z-[110] w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white backdrop-blur-sm"
+                  className="lg:hidden fixed top-[calc(15vh+12px)] right-4 z-110 w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white backdrop-blur-sm"
                 >
                   <X size={18} />
                 </button>
