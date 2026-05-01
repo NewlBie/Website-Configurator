@@ -51,9 +51,9 @@ export default function Home() {
 
       {/* LEFT CONTENT AREA */}
       <div className="w-full md:w-[60%] flex flex-col justify-between px-6 md:px-24 py-12 md:py-16 relative z-10 min-h-[600px] md:min-h-screen">
-        
+
         {/* LOGO / NAV */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="flex justify-between items-center"
@@ -87,15 +87,15 @@ export default function Home() {
               </h2>
             </div>
             <h1 className="text-[12vw] md:text-[90px] leading-[0.9] md:leading-[0.82] font-extrabold tracking-tighter mb-8 md:mb-10">
-              ENGINEER YOUR <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">DIGITAL ASSET,</span> <br />
+              PLAN YOUR<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/40">WEBSITE WITH,</span> <br />
               <span className="relative inline-block text-emerald-500">
-                PRO-GRADE.
-                <motion.div 
+                CLARITY & CONTROL
+                <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: '100%' }}
                   transition={{ delay: 0.8, duration: 1 }}
-                  className="absolute -bottom-1 md:-bottom-2 left-0 h-1 md:h-1.5 bg-emerald-500/20 rounded-full" 
+                  className="absolute -bottom-1 md:-bottom-2 left-0 h-1 md:h-1.5 bg-emerald-500/20 rounded-full"
                 />
               </span>
             </h1>
@@ -106,7 +106,7 @@ export default function Home() {
         </div>
 
         {/* FOOTER STATS */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* RIGHT SIDE - FORM AREA */}
       <div className="w-full md:w-[40%] min-h-screen md:h-screen relative flex items-center justify-center p-6 md:p-12 overflow-hidden border-t md:border-t-0 md:border-l border-white/5">
-        
+
         {/* VIBRANT MESH BACKGROUND */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 animate-mesh" />
@@ -133,7 +133,7 @@ export default function Home() {
         </div>
 
         {/* FORM CARD */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -142,9 +142,9 @@ export default function Home() {
           <div className="relative">
             {/* AMBIENT GLOW BEHIND CARD */}
             <div className="absolute -inset-4 bg-emerald-500/5 blur-[100px] rounded-full opacity-50" />
-            
+
             <div className="relative bg-[#0a0a0a]/40 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 backdrop-blur-3xl shadow-[0_32px_64px_-16px_rgba(0,0,0,0.6)] overflow-hidden">
-              
+
               {/* TOP HEADER */}
               <div className="flex flex-col gap-2 mb-8 md:mb-12 relative">
                 <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight">Start Your Build</h3>
